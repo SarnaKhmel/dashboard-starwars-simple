@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Dashboard Starwars</title>
+  <meta name="description" content="Dashboard StarWars">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Dashboard StarWars" />
+	<meta property="og:image" content="/assets/logo2.svg" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="./assets/logo3.png" >
+  
+</head>
+
+<body>
+  <div class="container">
+    <div class="menu-superior">
+      <div class="card-header">
+        <div class="card card-small">
+          <div class="card-content">
+            <div class="card-content_info">
+              <p>Персонажі</p>
+              <h2 id="personage"></h2>
+            </div>
+            <img src="./assets/personagens2.svg" alt="" />
+          </div>
+        </div>
+
+
+
+        <div class="card card-small">
+          <div class="card-content">
+            <div class="card-content_info">
+              <p>Види</p>
+              <h2 id="species"></h2>
+            </div>
+            <img src="./assets/especies2.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="card card-small">
+          <div class="card-content">
+            <div class="card-content_info">
+              <p>Кораблі</p>
+              <h2 id="ships"></h2>
+            </div>
+            <img src="./assets/naves2.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="card card-small">
+          <div class="card-content">
+            <div class="card-content_info">
+              <p>Судна</p>
+              <h2 id="vehicles"></h2>
+            </div>
+            <img src="./assets/veiculos2.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="card card-small">
+          <div class="card-content">
+            <div class="card-content_info">
+              <p>Планети</p>
+              <h2 id="planets"></h2>
+            </div>
+            <img src="./assets/planets2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-inferior">
+        <div class="table">
+          <h5>Фільми</h5>
+          <p>Основна інформація про фільми</p>
+          <table id="filmsTable">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Manager</th>
+                <th>Episode</th>
+                <th>Characters</th>
+                <th>Species</th>
+                <th>Ships</th>
+                <th>Vehicles</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+        </div>
+      </div>
+
+      <div class="menu-inferior">
+        <div class="table">
+          <h5>Персонажі</h5>
+          <p>Основна інформація про персонажів</p>
+          <table id="personageTable">
+            <thead>
+              <tr>
+                <th>Ім'я</th>
+                <th>Стать</th>
+                <th>Рік народження</th>
+                <th>Колір волося</th>
+                <th>Колір очей</th>
+                <th>Вага</th>
+                <th>Зріст</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
